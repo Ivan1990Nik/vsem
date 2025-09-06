@@ -1,0 +1,184 @@
+/* Основной заголовок */
+.header {
+  width: 100%;
+  background-color: #000000; /* чёрный фон */
+  border-bottom: 1px solid #ffd600; /* тонкая жёлтая линия */
+  box-shadow: 0 1px 5px rgba(255, 214, 0, 0.3); /* мягкая желтая тень */
+}
+
+/* Контейнер навигации */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Лого */
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd600; /* ярко-жёлтый */
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.header-logo a:hover {
+  color: #fff176; /* светло-жёлтый при наведении */
+}
+
+/* Список меню */
+.header-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+/* Элементы списка */
+.header-list li a {
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #ffd600; /* жёлтый текст */
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+/* Выравнивание */
+.header-list li {
+  display: flex;
+  align-items: center;
+}
+
+/* Hover эффект */
+.header-list li a:hover {
+  background-color: #ffd600; /* жёлтый фон */
+  color: #000000; /* чёрный текст */
+}
+
+/* Активная ссылка */
+.header-list li a.active {
+  background-color: #ffea00; /* ярко-жёлтый фон */
+  color: #000000;
+  font-weight: 700;
+}
+
+/* === Новые стили для бургер-меню (интегрированные) === */
+
+/* Бургер-кнопка на мобильных */
+.burger-btn {
+  display: none; /* Скрыта по умолчанию */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffd600; /* Серый по вашему дизайну */
+  padding: 0;
+  margin: 0;
+}
+
+/* Мобильное выпадное меню */
+.mobile-menu {
+  display: none; /* Скрыто по умолчанию */
+  position: absolute;
+  top: 100%; /* Под header */
+  left: 0;
+  width: 100%;
+  background: #000000; /* Черный фон, как header */
+  border: 1px solid #ffd600; /* Жёлтая граница */
+  box-shadow: 0 4px 6px rgba(255, 214, 0, 0.3); /* Ваша тень */
+  z-index: 1000;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0 1rem; /* Отступы как в контейнере */
+  margin: 0;
+}
+
+.mobile-nav-list li {
+  border-bottom: 1px solid #ffd600; /* Жёлтая линия */
+  padding: 0.8rem 0;
+}
+
+.mobile-nav-list a,
+.mobile-nav-list .nav-item {
+  text-decoration: none;
+  color: #ffd600; /* Жёлтый текст */
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-list a:hover,
+.mobile-nav-list .nav-item:hover {
+  color: #fff176; /* Светло-жёлтый, как лого */
+}
+
+/* Анимация открытия меню */
+.mobile-menu[style*="display: block"] { /* Если используете inline-style, или добавьте класс */
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === Обновленная адаптивность (<600px, как в коде JS) === */
+@media (max-width: 600px) {
+  .header-container {
+    position: relative; /* Для позиционирования меню */
+    flex-direction: row; /* Оставляем горизонтальным: лого слева, бургер справа */
+    padding: 1rem; /* Уменьшаем padding */
+  }
+  
+  .header-list {
+    display: none; /* Скрываем десктопное меню */
+  }
+  
+  .burger-btn {
+    display: block; /* Показываем бургер */
+  }
+  
+  .mobile-menu {
+    display: block; /* Показываем мобильное меню (управляется JS через состояние) */
+  }
+  
+  /* Для flex: Лого занимает пространство, бургер прижимается вправо */
+  .header-logo {
+    flex: 1;
+  }
+}
+
+/* Оставляем ваш старый query для отступов, если нужно */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Если хотите колонки на 768px */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .header-list {
+    gap: 1rem;
+    justify-content: center;
+  }
+}

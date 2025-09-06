@@ -1,0 +1,28 @@
+
+
+
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.home-images {
+max-width: 600px;
+}
+
+.home-image {
+    border-radius: 500px;
+  width: 100%; /* Размер картинок, настройте */
+  height: auto;
+}
+
+.img-1 {
+  top: 0;
+  left: 0;
+  z-index: 1; /* Фон */
+  transform: translateX(0%) translateY(0%);
+}
+
+

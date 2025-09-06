@@ -1,0 +1,351 @@
+.apartaments-container nav {
+  text-align: center;  /* Центрирование блока (опционально) */
+  margin: 20px 0;     /* Отступ сверху/снизу от основного контента */
+}
+
+.nav-list--apartments {
+  display: flex;              /* Располагаем элементы списка в строку */
+  flex-direction: row;        /* Единообразие (хотя row по умолчанию) */
+  justify-content: center;    /* Центрирование кнопок */
+  align-items: center;        /* Выравнивание по вертикали */
+  list-style: none;           /* Убираем маркеры списка */
+  padding: 0;
+  gap: 15px;                  /* Отступ между кнопками (можно увеличить/уменьшить) */
+  flex-wrap: wrap;            /* Перенос на малых экранах */
+}
+
+/* Элемент списка (обёртка для кнопки) */
+.nav-list-btn {
+  display: inline-block;  /* Легче контролировать, но flex тоже ок */
+}
+
+/* Стили кнопок (обнови btn-style, если нужно) */
+.btn-style {
+  background: #111;           /* Темный фон для кнопок (чтобы выделять активную) */
+  color: #ffd700;             /* Желтый текст */
+  border: 2px solid #ffd700;  /* Желтая рамка */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.btn-style:hover {
+  background: #ffd700;        /* Желтый фон при ховере */
+  color: #111;                /* Черный текст на желтом */
+}
+
+.btn-style:active, 
+.nav-list-btn.active .btn-style {  /* Для активной кнопки (если добавишь класс active) */
+  background: #ffd700;
+  color: #111;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   Модальное окно в черно-желтой теме (усиленная версия)
+   ===============================
+   - Фон: черный с желтыми акцентами
+   - Контраст: максимальный для читаемости
+   - Элементы: рамки, тени и ховер-эффекты в желтом
+   ============================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95); /* Более темный черный overlay для фокуса */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: auto;
+}
+
+.modal-content-fullscreen {
+  background: #111; /* Темно-черный фон модалки (можно #000 для еще большего контраста) */
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffd700; /* Ярко-желтый текст */
+  border: 2px solid #ffd700; /* Желтая рамка вокруг всей модалки */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Светящаяся желтая тень для эффекта */
+}
+
+.modal-close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #ffd700; /* Желтая кнопка закрытия */
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s ease, transform 0.3s ease; /* Добавил переход для ховера */
+}
+
+.modal-close-btn:hover {
+  color: #fff000; /* Светло-желтый при наведении */
+  transform: scale(1.1); /* Легкое увеличение при ховере */
+}
+
+.modal-content-fullscreen h2 {
+  color: #ffd700; /* Желтый заголовок */
+  margin: 0;
+  font-size: 2.2em; /* Сделал крупнее для акцента */
+  text-transform: uppercase; /* Для стиля */
+  border-bottom: 1px solid #ffd700; /* Желтая линия под заголовком */
+  padding-bottom: 10px;
+}
+
+.modal-image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ffd700; /* Желтая рамка вокруг изображений */
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Желтая тень под фото */
+  margin: 10px 0;
+}
+
+/* Модальное описание и список */
+.modal-content-fullscreen p {
+  color: #ccc; /* Светло-серый текст для описаний */
+  line-height: 1.6;
+  font-size: 1.1em; /* Чуть крупнее для читаемости */
+}
+
+.modal-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 215, 0, 0.1); /* Легкий желтый фон для блока деталей */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.modal-details li {
+  margin-bottom: 10px;
+  color: #ffd700; /* Желтый для деталей */
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.modal-details li::before {
+  content: "✓"; /* Желтая галочка перед каждым пунктом */
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Дополнительные элементы для полного стиля */
+.modal-content-fullscreen a { /* Если есть ссылки */
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.modal-content-fullscreen a:hover {
+  color: #fff000; /* Более светлый желтый при ховере */
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 768px) {
+  .modal-content-fullscreen {
+    padding: 20px; /* Меньше отступов на мобильных */
+  }
+  .modal-close-btn {
+    font-size: 24px; /* Кнопка меньше на маленьких экранах */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000, #333); /* Градиентный фон */
+  margin: 0;
+  padding: 0;
+  color: #ffea00; /* Ярко-лимонный желтый */
+}
+
+/* ===============================
+   Сетка для карточек квартир (4 в ряду)
+   ===============================
+   - Grid: для гибкой сетки
+   - Адаптивность: 4 на больших, 3 на средних, 2 на малых, 1 на крохотных
+   - Черно-желтый стиль: желтые акценты для рамок и кнопок
+   ============================== */
+
+/* ===============================
+   Контейнер для сетки карточек (.apartments-grid)
+   ============================== */
+/* ===============================
+   Сетка для списка квартир (адаптивная)
+   ============================== */
+.apartments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 карточки в ряду по умолчанию */
+  gap: 20px;  /* Отступ между карточками */
+  padding: 20px;  /* Отступ от краев страницы */
+  max-width: 1200px;  /* Ограничь ширину для центрирования */
+  margin: 0 auto;  /* Центрируй контейнер */
+}
+
+/* Адаптивность для разных экранов */
+@media (max-width: 1024px) {
+  .apartments-grid {
+    grid-template-columns: repeat(3, 1fr);  /* 3 в ряду на планшетах */
+  }
+}
+
+@media (max-width: 768px) {
+  .apartments-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 в ряду на малых экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .apartments-grid {
+    grid-template-columns: 1fr;  /* 1 в ряду на мобильных */
+    gap: 15px;  /* Меньше отступов */
+  }
+}
+
+/* ===============================
+   Стили карточек (с overlay и черно-желтой темой, информация в нижних 40%)
+   ============================== */
+.apartment-card {
+  position: relative;         /* Для абсолютного позиционирования overlay */
+  background: #111;           /* Темно-черный фон */
+  border: 2px solid #ffd700;  /* Желтая рамка */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);  /* Желтая тень */
+  overflow: hidden;           /* Обрезаем выступающие части */
+  height: 300px;              /* Фиксированная высота карточки (настрой на нужную, например 350px) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Для hover */
+  color: #ffd700;             /* Желтый текст */
+}
+
+.apartment-card:hover {
+  transform: translateY(-5px);  /* Легкий подъем при ховере */
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5);  /* Более яркая тень */
+}
+
+/* Изображение (теперь занимает верхние 60%, оставляя низ для overlay) */
+.apartment-image {
+  width: 100%;
+  height: 60%;              /* Изменено: оставляет нижние 40% для overlay */
+  object-fit: cover;          /* Масштабирует и обрезает для наполнения */
+  display: block;
+}
+
+/* Наложение информации (overlay в нижних 40%, компактнее — ближе элементы) */
+.apartment-info {
+  position: absolute;         /* Позиционирование снизу */
+  bottom: 0;                 /* Фиксируем внизу */
+  left: 0;
+  width: 100%;
+  height: 50%;               /* Занимает нижние 40% карточки (нижние 40% изображения) */
+  background: rgba(0, 0, 0, 0.7);  /* Прозрачность сохранена: полупрозрачный черный фон */
+  display: flex;              /* Flex для прижатия элементов */
+  flex-direction: column;
+  justify-content: flex-start; /* Элементы упаковываются сверху вниз */
+  align-items: center;        /* Центрируем по ширине */
+  padding: 8px;               /* Уменьшен для компактности (был 20px) */
+  box-sizing: border-box;
+  transition: background 0.3s ease;  /* Плавный переход фона */
+}
+
+.apartment-info:hover {
+  background: rgba(0, 0, 0, 0.5);  /* При ховере немного больше прозрачности для контраста (можно убрать, если не нужно) */
+}
+
+/* Заголовок (компактнее, ближе к остальному контенту) */
+.apartment-info h3 {
+  color: #ffd700;             /* Желтый заголовок */
+  font-size: 1.0em;
+  margin: 0 0 5px 0;         /* Уменьшен нижний margin (был 10px) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Тень для контраста на фоне */
+  text-align: center;
+}
+
+/* Описание (компактнее) */
+.apartment-description {
+  color: #ccc;               /* Светло-серый текст */
+  margin: 0 0 8px 0;         /* Уменьшен нижний margin (был 15px) */
+  line-height: 1.3;          /* Собрано ближе (был 1.4) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Тень */
+  text-align: center;
+  font-size: 0.9em;          /* Слегка уменьшен шрифт для компактности */
+}
+
+/* Детали (компактнее, меньший gap) */
+.apartment-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;                  /* Уменьшен gap (был 10px) для ближе расположения */
+  margin-bottom: 8px;        /* Уменьшен нижний margin (был 15px) */
+  justify-content: center;
+}
+
+.apartment-details span {
+  background: rgba(255, 215, 0, 0.1);  /* Легкий желтый фон для деталей */
+  color: #ffd700;
+  padding: 4px 8px;           /* Уменьшен padding для компактности */
+  border-radius: 5px;
+  font-size: 0.8em;          /* Уменьшен шрифт */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Кнопка (компактнее, ближе к деталям) */
+.btn-style {
+  background: #ffd700;        /* Желтый фон кнопки */
+  color: #111;                /* Черный текст на желтом */
+  border: none;
+  padding: 8px 16px;          /* Уменьшен padding для компактности */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;          /* Уменьшен шрифт для плотности */
+  transition: background 0.3s ease;
+}
+
+.btn-style:hover {
+  background: #fff000;        /* Светло-желтый при ховере */
+}
