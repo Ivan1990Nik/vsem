@@ -31,10 +31,11 @@ const Header = () => {
         {/* Десктопная навигация */}
         {!isMobile && (
           <ul className="header-list">
-            <li><a href="/">Главная</a></li>
+            
+            <li><Link to="/">Главная</Link></li>
             <li><Link to="/apartment">Квартиры</Link></li>
-            <li><a href="/rules">Правила</a></li>
-            <li><a href="/reviews">Отзывы</a></li>
+            <li><Link to="/rules">Правила</Link></li>
+            <li><Link to="/reviews">Отзывы</Link></li>
             <li><Link to="/contact" className="nav-item">Контакты</Link></li>
           </ul>
         )}
@@ -50,10 +51,11 @@ const Header = () => {
         {isMobile && isMenuOpen && (
           <div className="mobile-menu">
             <ul className="mobile-nav-list">
-              <li><a href="/" onClick={closeMenu}>Главная</a></li>
+              
+              <li><Link to="/" onClick={closeMenu}>Главная</Link></li>
               <li><Link to="/apartment" onClick={closeMenu}>Квартиры</Link></li>
-              <li><a href="/rules" onClick={closeMenu}>Правила</a></li>
-              <li><a href="/reviews" onClick={closeMenu}>Отзывы</a></li>
+              <li><Link to="/rules" onClick={closeMenu}>Правила</Link></li>
+              <li><Link to="/reviews" onClick={closeMenu}>Отзывы</Link></li>
               <li><Link to="/contact" className="nav-item" onClick={closeMenu}>Контакты</Link></li>
             </ul>
           </div>

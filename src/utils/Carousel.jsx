@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import img1 from '../assets/images/imgBos.jpg'
+import img1 from '../assets/images/50лет57а/imgBos.jpg'
 const Carousel = () => {
   const settings = {
      dots: false,          // Индикаторы снизу

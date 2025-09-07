@@ -21,7 +21,7 @@ return (
         />
         <div className="apartment-info">
           <h3>{apartment.title}</h3>
-          <p className="apartment-description">{apartment.description}</p>
+         {/*  <p className="apartment-description">{apartment.description}</p> */}
           <div className="apartment-details">
             <span>Цена: {apartment.price} ₽</span>
             <span>Площадь: {apartment.area} м²</span>

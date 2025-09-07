@@ -1,5 +1,5 @@
 import "./stylePages.css"
-import img from '../assets/images/imgBos.jpg'
+import img from '../assets/images/50лет57а/imgBos.jpg'
 import Carousel from "../utils/Carousel";
 
 

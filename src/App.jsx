@@ -3,6 +3,7 @@ import Header from './components/header/Header.jsx';
 /* import Footer from './components/Footer.jsx'; */
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
+import Rules from './pages/rules/Rules.jsx';
 import "./App.css"
 import Apartaments from './pages/apartments/Apartments.jsx';
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/apartment" element={<Apartaments />} />
+            <Route path="/rules" element={<Rules />} />
 
           </Routes>
         </main>

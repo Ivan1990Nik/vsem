@@ -1,5 +1,9 @@
-import img from '../../assets/images/imgBos.jpg'
-
+import img from '../../assets/images/50лет57а/imgBos.jpg'; 
+import img50_01 from '../../assets/images/50лет57а/img_01.jpg'
+import img50_02 from '../../assets/images/50лет57а/img_02.jpg'
+import img50_03 from '../../assets/images/50лет57а/img_03.jpg'
+import img50_04 from '../../assets/images/50лет57а/img_04.jpg'
+import img50_05 from '../../assets/images/50лет57а/img_05.jpg'
 
 // apartmentsData.js
 export const apartments = [
@@ -12,6 +16,13 @@ export const apartments = [
     floor: 5,
     rooms: 1, // Для фильтрации
     image: img,
+  images: [
+    img50_01,
+    img50_02,
+    img50_03,
+    img50_04,
+    img50_05
+  ]
   },
   {
     id: 2,
