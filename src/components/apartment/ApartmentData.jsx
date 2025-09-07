@@ -33,6 +33,9 @@ export const apartments = [
     floor: 7,
     rooms: 2,
     image: 'path/to/image2.jpg',
+    images: [
+  
+  ]
   },
   {
     id: 3,
@@ -43,6 +46,9 @@ export const apartments = [
     floor: 3,
     rooms: 0,
     image: 'path/to/image3.jpg',
+    images: [
+  
+  ]
   },
   // Добавьте больше квартир...
 ];

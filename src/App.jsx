@@ -6,6 +6,7 @@ import Contact from './pages/Contact.jsx';
 import Rules from './pages/rules/Rules.jsx';
 import "./App.css"
 import Apartaments from './pages/apartments/Apartments.jsx';
+import Footer from './components/footer/footer.jsx';
 
 
 
@@ -21,10 +22,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/apartment" element={<Apartaments />} />
             <Route path="/rules" element={<Rules />} />
-
           </Routes>
         </main>
-       {/*  <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

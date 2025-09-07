@@ -9,7 +9,8 @@
 }
 
 .home-images {
-max-width: 600px;
+max-width: 900px;
+
 }
 
 .home-image {
@@ -18,11 +19,60 @@ max-width: 600px;
   height: auto;
 }
 
-.img-1 {
-  top: 0;
-  left: 0;
-  z-index: 1; /* Фон */
-  transform: translateX(0%) translateY(0%);
+
+
+
+.home-title {
+font-size:80px;
+margin: 0;
+}
+.home-description {
+  margin: 0;
+text-align: end;
+font-weight: 900;
+font-size: 20px;
+}
+.home-phone-btn {
+ 
+  font-weight: bold;
 }
 
+.home-btn {
+  display: flex;
+  justify-content: space-around;
+   flex-wrap: wrap;  
+}
 
+@media (max-width: 480px) {
+  .home-btn {
+    flex-direction: column;       /* Кнопки теперь друг за другом вертикально */
+    flex-wrap: nowrap;            /* Убираем wrap, так как в column он не нужен */
+    align-items: center;          /* Центрирует кнопки по горизонтали */
+    justify-content: center;      /* Центрирует кнопки по вертикали (опционально) */
+  }
+  .home-images {
+    display: none;
+  }
+}
+
+/* Стили для кнопки звонка */
+.home-phone-btn {
+  display: inline-block;
+  margin-top: 100px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+}
+
+.btn-home-link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+.home-phone-btn:hover {
+  background-color: #0056b3;
+}

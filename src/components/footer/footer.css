@@ -1,0 +1,13 @@
+.footer-container {
+  position: fixed;     /* Зафиксировать внизу */
+  bottom: 0;           /* Внизу экрана */
+  left: 0;             /* От левого края */
+  right: 0;            /* До правого края */
+  background-color: #000000; 
+  border-top: 1px solid #ffd600;
+  color: white;        /* Цвет текста */
+  padding: 10px;       /* Отступы */
+  text-align: center;  /* Центрированное положение */
+  z-index: 1000;       /* Высокий z-index, чтобы не перекрывался */
+  height: 50px;        /* Фиксированная высота (пример, настройте) */
+}
