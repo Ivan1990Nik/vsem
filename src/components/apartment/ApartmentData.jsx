@@ -10,7 +10,7 @@ export const apartments = [
   {
     id: 1,
     title: 'Квартира 1',
-    description: 'Отличная квартира с видом на парк',
+    description: 'Отличная квартира  с видом на парк',
     price: 5000000,
     area: 45,
     floor: 5,
