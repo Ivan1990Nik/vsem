@@ -22,13 +22,33 @@ max-width: 900px;
 
 
 
+.home-info {
+  display: flex;
+  flex-direction: column; /* Элементы внутри идут вертикально */
+  align-items: flex-start; /* По умолчанию выравнивание слева */
+  padding: 20px; /* Отступы, чтобы текст не прижимался к краям */
+}
+@media (max-width: 768px) {
+  .home-info {
+    text-align: center; /* Центрируем весь текст внутри блока */
+    align-items: center; /* Выравниваем элементы по центру */
+  }
+}
+
+/* Стили для заголовка и описания, если нужно донастроить */
+.home-title, .home-description {
+  margin: 10px 0; /* Отступы между элементами */
+}
+
+
+
+
 .home-title {
 font-size:80px;
 margin: 0;
 }
 .home-description {
   margin: 0;
-text-align: end;
 font-weight: 900;
 font-size: 20px;
 }
@@ -50,6 +70,12 @@ font-size: 20px;
     align-items: center;          /* Центрирует кнопки по горизонтали */
     justify-content: center;      /* Центрирует кнопки по вертикали (опционально) */
   }
+
+  .home-btn button {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
   .home-images {
     display: none;
   }
@@ -58,8 +84,8 @@ font-size: 20px;
 /* Стили для кнопки звонка */
 .home-phone-btn {
   display: inline-block;
-  margin-top: 100px;
-  padding: 8px 16px;
+  margin-top: 30px;
+  padding: 8px 20px;
   background-color: #007bff;
   color: white;
   border-radius: 5px;
@@ -68,10 +94,13 @@ font-size: 20px;
   
 }
 
+
+
+
 .btn-home-link {
   text-decoration: none;
   color: inherit;
-  
+
 }
 .home-phone-btn:hover {
   background-color: #0056b3;
