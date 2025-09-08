@@ -22,7 +22,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="social-link telegram"
         >
-        <FaTelegramPlane />
+        <FaTelegramPlane style={{ color: 'white' }}/>
         </a>
         <a 
           href="https://wa.me/1234567890"  // Замени 1234567890 на свой номер
@@ -30,7 +30,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="social-link whatsapp"
         >
-         <FaWhatsapp />
+        <FaWhatsapp style={{ color: 'green' }} />
         </a>
          <a 
           href="https://vk.com/your_vk_page" 
