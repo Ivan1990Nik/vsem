@@ -1,6 +1,3 @@
-
-
-
 .home-container {
   display: flex;
   justify-content: space-around;
@@ -9,13 +6,14 @@
 }
 
 .home-images {
-max-width: 900px;
+  max-width: 900px;
 
 }
 
 .home-image {
-    border-radius: 500px;
-  width: 100%; /* Размер картинок, настройте */
+  border-radius: 500px;
+  width: 100%;
+  /* Размер картинок, настройте */
   height: auto;
 }
 
@@ -24,61 +22,47 @@ max-width: 900px;
 
 .home-info {
   display: flex;
-  flex-direction: column; /* Элементы внутри идут вертикально */
-  align-items: flex-start; /* По умолчанию выравнивание слева */
-  padding: 20px; /* Отступы, чтобы текст не прижимался к краям */
+  flex-direction: column;
+  /* Элементы внутри идут вертикально */
+  padding: 20px;
+  /* Отступы, чтобы текст не прижимался к краям */
 }
+
 @media (max-width: 768px) {
   .home-info {
-    text-align: center; /* Центрируем весь текст внутри блока */
-    align-items: center; /* Выравниваем элементы по центру */
+    text-align: center;
+    /* Центрируем весь текст внутри блока */
+    align-items: center;
+    /* Выравниваем элементы по центру */
   }
 }
 
 /* Стили для заголовка и описания, если нужно донастроить */
-.home-title, .home-description {
-  margin: 10px 0; /* Отступы между элементами */
+.home-title,
+.home-description {
+  margin: 10px 0;
+  /* Отступы между элементами */
 }
 
 
 
 
 .home-title {
-font-size:80px;
-margin: 0;
+  font-size: 80px;
+  margin: 0;
 }
+
 .home-description {
   margin: 0;
-font-weight: 900;
-font-size: 20px;
+  font-weight: 900;
+  font-size: 20px;
 }
-.home-phone-btn {
- 
-  font-weight: bold;
-}
+
 
 .home-btn {
   display: flex;
   justify-content: space-around;
-   flex-wrap: wrap;  
-}
 
-@media (max-width: 480px) {
-  .home-btn {
-    flex-direction: column;       /* Кнопки теперь друг за другом вертикально */
-    flex-wrap: nowrap;            /* Убираем wrap, так как в column он не нужен */
-    align-items: center;          /* Центрирует кнопки по горизонтали */
-    justify-content: center;      /* Центрирует кнопки по вертикали (опционально) */
-  }
-
-  .home-btn button {
-  width: 300px;
-  height: 50px;
-  font-size: 20px;
-}
-  .home-images {
-    display: none;
-  }
 }
 
 /* Стили для кнопки звонка */
@@ -91,10 +75,8 @@ font-size: 20px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  
+  font-weight: bold;
 }
-
-
 
 
 .btn-home-link {
@@ -102,6 +84,63 @@ font-size: 20px;
   color: inherit;
 
 }
+
 .home-phone-btn:hover {
   background-color: #0056b3;
+}
+
+
+
+
+@media (max-width: 480px) {
+  .home-btn {
+    flex-direction: column;
+    /* Кнопки теперь друг за другом вертикально */
+    flex-wrap: nowrap;
+    /* Убираем wrap, так как в column он не нужен */
+    align-items: center;
+    /* Центрирует кнопки по горизонтали */
+    justify-content: center;
+    /* Центрирует кнопки по вертикали (опционально) */
+  }
+
+  .home-btn button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .home-images {
+    display: none;
+  }
+
+  .home-title {
+    font-size: 60px;
+  }
+
+
+  .home-container {
+    background-image: url('../assets/images/50лет57а/imgBos.jpg');
+    /* Твоя картинка */
+    background-size: cover;
+    /* Растягиваем картину на всю область с сохранением пропорций */
+    background-position: center;
+    /* Центрируем изображение */
+    background-repeat: no-repeat;
+    /* Без повтора */
+
+    /* Для полной рабочей зоны экрана (если это необходимо) */
+    height: 100%;
+    /* Высота на весь viewport (экран) */
+    width: 100%;
+    /* Ширина на 100% */
+
+    /* Дополнительные стили для вида */
+    display: flex;
+    /* Flexbox для содержимого внутри, если нужно */
+    align-items: center;
+    /* Выровнять содержимое по центру вертикально */
+    justify-content: center;
+    /* Выровнять содержимое по центру горизонтально */
+  }
 }
