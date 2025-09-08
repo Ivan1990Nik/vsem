@@ -1,4 +1,7 @@
 .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;     /* Зафиксировать внизу */
   bottom: 0;           /* Внизу экрана */
   left: 0;             /* От левого края */
@@ -9,5 +12,25 @@
   padding: 10px;       /* Отступы */
   text-align: center;  /* Центрированное положение */
   z-index: 1000;       /* Высокий z-index, чтобы не перекрывался */
-  height: 30px;        /* Фиксированная высота (пример, настройте) */
+  height: 30px;    
+  color: #ffd600;  
+  font-size: 25px;  /* Фиксированная высота (пример, настройте) */
+}
+.footer-container p{
+  margin-right: 40px;
+}
+.social-link  {
+  font-size: 30px;
+  margin: 0px 30px;
+}
+
+@media (max-width: 480px) {
+  .social-link  {
+  font-size: 30px;
+  margin: 0px 10px;
+}
+  
+  .footer-container p{
+display: none;
+}
 }
