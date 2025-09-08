@@ -1,4 +1,9 @@
+import MaxIcon from "../../utils/MaxIcons";
 import "./footer.css";import { FaTelegramPlane, FaWhatsapp, FaVk } from 'react-icons/fa';
+
+
+// В твоём компоненте
+// Размер можно менять
 
 
 
@@ -27,15 +32,7 @@ const Footer = () => {
         >
          <FaWhatsapp />
         </a>
-        <a 
-          href="https://www.torproject.org/"  // Или ссылка на ваш onion-сайт, напр. http://youronion.onion
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="social-link tor"
-        >
-          Max
-        </a>
-        <a 
+         <a 
           href="https://vk.com/your_vk_page" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -43,6 +40,15 @@ const Footer = () => {
         >
          <FaVk />
         </a>
+        <a 
+          href="https://www.torproject.org/"  // Или ссылка на ваш onion-сайт, напр. http://youronion.onion
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link tor"
+        >
+        <MaxIcon width={30} height={30} />  
+        </a>
+       
       </div>
     </div>
   );
