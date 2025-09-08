@@ -78,6 +78,9 @@
 
 /* Бургер-кнопка на мобильных */
 .burger-btn {
+  position: absolute;
+  top: -8;
+  right: 10px;
   display: none; /* Скрыта по умолчанию */
   background: none;
   border: none;
@@ -86,15 +89,17 @@
   color: #ffd600; /* Серый по вашему дизайну */
   padding: 0;
   margin: 0;
+  
 }
 
 /* Мобильное выпадное меню */
 .mobile-menu {
+  text-align: center;
   display: none; /* Скрыто по умолчанию */
   position: absolute;
   top: 100%; /* Под header */
   left: 0;
-  width: 100%;
+  width: 99%;
   background: #000000; /* Черный фон, как header */
   border: 1px solid #ffd600; /* Жёлтая граница */
   box-shadow: 0 4px 6px rgba(255, 214, 0, 0.3); /* Ваша тень */
