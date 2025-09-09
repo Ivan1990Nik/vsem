@@ -120,14 +120,16 @@
     background: rgba(3, 3, 3, 0.479);
     border-radius: 30%;
     margin: 80px 0;
-  }
+    font-size: 30px; 
+   }
 
   .home-images {
     display: none;
   }
 
   .home-title {
-    font-size: 60px;
+    font-size: 70px;
+    
   }
 
 
@@ -146,13 +148,13 @@
     /* Высота на весь viewport (экран) */
     width: 100%;
     /* Ширина на 100% */
-
     /* Дополнительные стили для вида */
     display: flex;
     /* Flexbox для содержимого внутри, если нужно */
     align-items: center;
     /* Выровнять содержимое по центру вертикально */
     justify-content: center;
+
     /* Выровнять содержимое по центру горизонтально */
   }
 
