@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
 body {
   font-family: Arial, sans-serif;
+    font-family: "Permanent Marker", cursive;
   background-color: #000; /* Черный фон страницы */
   margin: 0;
   padding: 0;
   color: #ffd700; /* Темно-желтый текст по умолчанию */
+
+
+
+
+
 }
 
 .container {
