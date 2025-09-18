@@ -1,9 +1,19 @@
-import img from '../../assets/images/50лет57а/imgBos.jpg'; 
+import img from '../../assets/images/50лет57а/imgBos.jpg';
 import img50_01 from '../../assets/images/50лет57а/img_01.jpg'
 import img50_02 from '../../assets/images/50лет57а/img_02.jpg'
 import img50_03 from '../../assets/images/50лет57а/img_03.jpg'
 import img50_04 from '../../assets/images/50лет57а/img_04.jpg'
 import img50_05 from '../../assets/images/50лет57а/img_05.jpg'
+
+
+import img38_01 from '../../assets/images/50лет57а_38м2/img_01.jpg'
+import img38_02 from '../../assets/images/50лет57а_38м2/img_02.jpg'
+import img38_03 from '../../assets/images/50лет57а_38м2/img_03.jpg'
+import img38_04 from '../../assets/images/50лет57а_38м2/img_04.jpg'
+import img38_05 from '../../assets/images/50лет57а_38м2/img_05.jpg'
+import img38_06 from '../../assets/images/50лет57а_38м2/img_06.jpg'
+import img38_07 from '../../assets/images/50лет57а_38м2/img_07.jpg'
+import img38_08 from '../../assets/images/50лет57а_38м2/img_08.jpg'
 
 // apartmentsData.js
 export const apartments = [
@@ -16,13 +26,13 @@ export const apartments = [
     floor: 5,
     rooms: 1, // Для фильтрации
     image: img,
-  images: [
-    img50_01,
-    img50_02,
-    img50_03,
-    img50_04,
-    img50_05
-  ]
+    images: [
+      img50_01,
+      img50_02,
+      img50_03,
+      img50_04,
+      img50_05
+    ]
   },
   {
     id: 2,
@@ -32,10 +42,17 @@ export const apartments = [
     area: 65,
     floor: 7,
     rooms: 2,
-    image: 'path/to/image2.jpg',
+    image: img38_08,
     images: [
-  
-  ]
+      img38_01,
+      img38_02,
+      img38_03,
+      img38_04,
+      img38_05,
+      img38_06,
+      img38_07,
+      
+    ]
   },
   {
     id: 3,
@@ -47,8 +64,8 @@ export const apartments = [
     rooms: 0,
     image: 'path/to/image3.jpg',
     images: [
-  
-  ]
+
+    ]
   },
   // Добавьте больше квартир...
 ];

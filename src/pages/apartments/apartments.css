@@ -189,11 +189,6 @@ margin: 0;
 
 
 
-
-
-
-
-
 .apartments-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  /* 4 карточки в ряду по умолчанию */
