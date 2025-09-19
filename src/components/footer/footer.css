@@ -9,7 +9,7 @@
   background-color: #000000; 
   border-top: 1px solid #ffd600;
   color: white;        /* Цвет текста */
-  padding: 10px;       /* Отступы */
+  padding: 5px;       /* Отступы */
   text-align: center;  /* Центрированное положение */
   z-index: 1000;       /* Высокий z-index, чтобы не перекрывался */
   height: 30px;    
