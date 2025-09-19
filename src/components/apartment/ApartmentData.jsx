@@ -99,5 +99,31 @@ img38k_1_13,
 img38k_1_14
     ]
   },
+  {
+    id: 4,
+    title: 'Студия 3',
+    description: 'Уютная студия рядом с метро',
+    price: 4000000,
+    area: 30,
+    floor: 3,
+    rooms: 0,
+    video: img38k_1_video,
+    image: img38k_1_01,
+    images: [
+img38k_1_02,
+img38k_1_03,
+img38k_1_04,
+img38k_1_05,
+img38k_1_06,
+img38k_1_07,
+img38k_1_08,
+img38k_1_09,
+img38k_1_10,
+img38k_1_11,
+img38k_1_12,
+img38k_1_13,
+img38k_1_14
+    ]
+  },
   // Добавьте больше квартир...
 ];
