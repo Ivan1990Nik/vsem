@@ -149,21 +149,42 @@ margin: 0;
 }
 
 .modal-details li {
+  
   margin-bottom: 10px;
-  color: #ffd700; /* Желтый для деталей */
+  color: #ffd900; /* Желтый для деталей */
   font-weight: bold;
   list-style: none;
   position: relative;
   padding-left: 20px;
 }
 
-.modal-details li::before {
-  content: "✓"; /* Желтая галочка перед каждым пунктом */
+.modal-detail-item {
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr; /* ширина колонки для иконки, для заголовка, и для значения */
+  align-items: center;
+  gap: 8px; /* расстояние между колонками */
+  margin-bottom: 8px; /* отступ между элементами списка */
+}
+.modal-detail {
+transform: translateY(2px);
+font-size: 22px;
+color: rgb(10, 226, 226);
+}
+
+.modal-detail-title {
+
+}
+
+.modal-detail-data{
+
+}
+/* .modal-details li::before {
+  content: "✓"; 
   color: #ffd700;
   position: absolute;
   left: 0;
   top: 0;
-}
+} */
 
 /* Дополнительные элементы для полного стиля */
 .modal-content-fullscreen a { /* Если есть ссылки */

@@ -38,19 +38,31 @@ export const apartments = [
   {
     id: 1,
     title: 'Квартира 1',
+    address: '50 лет октября 57А',
     description: 'Отличная квартира  с видом на парк',
+
+
     price: 5000000,
     area: 45,
-    floor: 5,
-    rooms: 1, // Для фильтрации
-    image: img,
-    images: [
-      img50_01,
-      img50_02,
-      img50_03,
-      img50_04,
-      img50_05
-    ]
+
+    people: 2,
+    bed: 1,
+    technique: ['кондиционер, холодильник, плита, микроволновка, стиральная машина, водонагреватель, телевизор, фен, утюг'],
+    internet: 'WI-Fi',
+    pledge: 2000,
+    CheckoutTime: '14:00 - 12:00',
+
+
+      floor: 5,
+      rooms: 1, // Для фильтрации
+      image: img,
+      images: [
+        img50_01,
+        img50_02,
+        img50_03,
+        img50_04,
+        img50_05
+      ]
   },
   {
     id: 2,
@@ -84,46 +96,21 @@ export const apartments = [
     video: img38k_1_video,
     image: img38k_1_01,
     images: [
-img38k_1_02,
-img38k_1_03,
-img38k_1_04,
-img38k_1_05,
-img38k_1_06,
-img38k_1_07,
-img38k_1_08,
-img38k_1_09,
-img38k_1_10,
-img38k_1_11,
-img38k_1_12,
-img38k_1_13,
-img38k_1_14
+      img38k_1_02,
+      img38k_1_03,
+      img38k_1_04,
+      img38k_1_05,
+      img38k_1_06,
+      img38k_1_07,
+      img38k_1_08,
+      img38k_1_09,
+      img38k_1_10,
+      img38k_1_11,
+      img38k_1_12,
+      img38k_1_13,
+      img38k_1_14
     ]
   },
-  {
-    id: 4,
-    title: 'Студия 3',
-    description: 'Уютная студия рядом с метро',
-    price: 4000000,
-    area: 30,
-    floor: 3,
-    rooms: 0,
-    video: img38k_1_video,
-    image: img38k_1_01,
-    images: [
-img38k_1_02,
-img38k_1_03,
-img38k_1_04,
-img38k_1_05,
-img38k_1_06,
-img38k_1_07,
-img38k_1_08,
-img38k_1_09,
-img38k_1_10,
-img38k_1_11,
-img38k_1_12,
-img38k_1_13,
-img38k_1_14
-    ]
-  },
+
   // Добавьте больше квартир...
 ];
