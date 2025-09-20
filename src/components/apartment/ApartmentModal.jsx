@@ -18,19 +18,25 @@ const ApartmentModal = ({ apartment, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content-fullscreen" onClick={e => e.stopPropagation()}>
+        <div className='modal-header-content-fullscreen'>
         <button className="modal-close-btn" onClick={onClose}>×</button>
-        <h2>{apartment.title}</h2>
-        <p>{apartment.description}</p>
+        <h3>{apartment.title}, {apartment.area} м² </h3>
+        <p>{apartment.address}</p>
+        <p>от {apartment.price} за сутки</p>
+        </div>
         <ul className="modal-details">
 
-          <li className='modal-detail-item' >
-            <GiHouseKeys className='modal-detail' /><strong className='modal-detail-title'>Комнат:</strong><span className='modal-detail-data'>{apartment.rooms === 0 ? 'Студия' : apartment.rooms}</span>
-          </li>
           <li className='modal-detail-item' >
             <FaPeopleRoof className='modal-detail' /><strong className='modal-detail-title'>Гостей:</strong><span className='modal-detail-data'>{apartment.people}</span>
           </li>
           <li className='modal-detail-item' >
+            <GiHouseKeys className='modal-detail' /><strong className='modal-detail-title'>Комнат:</strong><span className='modal-detail-data'>{apartment.rooms === 0 ? 'Студия' : apartment.rooms}</span>
+          </li>
+          <li className='modal-detail-item' >
             <LiaVectorSquareSolid className='modal-detail' /><strong className='modal-detail-title'>Площадь:</strong><span className='modal-detail-data'>{apartment.area}м²</span>
+          </li>
+          <li className='modal-detail-item' >
+            <LuSofa className='modal-detail' /><strong className='modal-detail-title'>   спальные места:</strong><span className='modal-detail-data'>{apartment.bed}</span>
           </li>
           <li className='modal-detail-item' >
             <GiLaddersPlatform className='modal-detail' /><strong className='modal-detail-title'>Этаж:</strong><span className='modal-detail-data'>{apartment.floor}</span>
@@ -41,10 +47,6 @@ const ApartmentModal = ({ apartment, onClose }) => {
           <li className='modal-detail-item' >
             <IoWifiSharp className='modal-detail' /><strong className='modal-detail-title'>   Интернет:</strong><span className='modal-detail-data'>{apartment.internet}</span>
           </li>
-
-          <li className='modal-detail-item' >
-            <LuSofa className='modal-detail' /><strong className='modal-detail-title'>   спальные места:</strong><span className='modal-detail-data'>{apartment.bed}</span>
-          </li>
           <li className='modal-detail-item' >
             <GiReceiveMoney className='modal-detail' /><strong className='modal-detail-title'>Залог:</strong><span className='modal-detail-data'>{apartment.pledge}</span>
           </li>
@@ -54,9 +56,6 @@ const ApartmentModal = ({ apartment, onClose }) => {
 
 
 
-          <li><strong>адрес:</strong> {apartment.address}</li>
-          <li><strong>Цена:</strong> {apartment.price} ₽</li>
-        
       
         </ul>
 

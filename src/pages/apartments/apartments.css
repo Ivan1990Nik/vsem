@@ -91,7 +91,7 @@ margin: 0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1px;
   color: #ffd700; /* Ярко-желтый текст */
   border: 2px solid #ffd700; /* Желтая рамка вокруг всей модалки */
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Светящаяся желтая тень для эффекта */
@@ -161,9 +161,11 @@ margin: 0;
 .modal-detail-item {
   display: grid;
   grid-template-columns: 20px 1fr 1fr; /* ширина колонки для иконки, для заголовка, и для значения */
-  align-items: center;
+ /*  align-items: center; */
   gap: 8px; /* расстояние между колонками */
   margin-bottom: 8px; /* отступ между элементами списка */
+
+ 
 }
 .modal-detail {
 transform: translateY(2px);
@@ -185,11 +187,27 @@ color: rgb(10, 226, 226);
   left: 0;
   top: 0;
 } */
-
+.modal-header-content-fullscreen {
+  background-color: #cccccc96;
+  border-bottom: solid 3px #ffd700;;
+}
 /* Дополнительные элементы для полного стиля */
 .modal-content-fullscreen a { /* Если есть ссылки */
   color: #ffd700;
   text-decoration: underline;
+}
+.modal-content-fullscreen h3 { /* Если есть ссылки */
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+ margin: 0;
+}
+.modal-content-fullscreen p { /* Если есть ссылки */
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  color: #06edf5dc;
+ margin: 0;
 }
 
 .modal-content-fullscreen a:hover {

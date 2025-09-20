@@ -37,12 +37,12 @@ import img38k_1_video from '../../assets/images/50лет57А_к1/video.MP4'
 export const apartments = [
   {
     id: 1,
-    title: 'Квартира 1',
-    address: '50 лет октября 57А',
+    title: '1-к. квартира',
+    address: '50 лет октября 57a',
     description: 'Отличная квартира  с видом на парк',
 
 
-    price: 5000000,
+    price: 2500,
     area: 45,
 
     people: 2,
