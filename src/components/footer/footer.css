@@ -1,0 +1,59 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;     /* Зафиксировать внизу */
+  bottom: 0;           /* Внизу экрана */
+  left: 0;             /* От левого края */
+  right: 0;            /* До правого края */
+   background-color: #e2eefd; /* чёрный фон */
+  /* border-top: 1px solid #ffd600; */
+  color: white;        /* Цвет текста */
+  padding: 15px;       /* Отступы */
+  text-align: center;  /* Центрированное положение */
+  z-index: 1000;       /* Высокий z-index, чтобы не перекрывался */
+  height: 30px;    
+  color: #504821;  
+  font-size: 25px;  /* Фиксированная высота (пример, настройте) */
+}
+.footer-container p{
+  margin-right: 40px;
+   color: rgb(0, 0, 0); 
+}
+.social-link  {
+  font-size: 30px;
+  margin: 0px 30px;
+}
+
+
+
+.links-container {
+   margin-top: 10px;
+   display: flex;
+}
+
+
+@media (max-width: 480px) {
+  .social-link  {
+  font-size: 30px;
+  margin: 0px 20px;
+}
+  
+  .footer-container p{
+display: none;
+}
+}
+
+.social-link.website:hover {
+  color: #0056b3; /* Темнее при наведении */
+}
+
+.social-link.booking:hover {
+  color: #1e7e34; /* Темнее при наведении */
+}
+
+/* Общий стиль для всех social-link, если нужно */
+.social-link {
+  transition: color 0.3s ease;
+  margin: 0 10px; /* Расстояние между иконками */
+}

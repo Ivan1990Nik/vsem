@@ -1,0 +1,178 @@
+/* Общий контейнер */
+.contacts-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: contacts-fadeIn 0.5s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes contacts-fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Заголовок */
+.contacts-title {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Подзаголовок */
+.contacts-subtitle {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Блок с контактной информацией */
+.contacts-info {
+  margin-bottom: 25px;
+}
+
+.contacts-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #34495e;
+}
+
+.contacts-info-icon {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.contacts-info-tel {
+  text-decoration: none;
+  color: #1b62a8;
+  font-size: 18px;
+}
+
+.contacts-info-item:hover .contacts-info-icon {
+  color: #2980b9;
+}
+
+/* Контейнер ссылок */
+.contacts-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Ссылки на социальные сети */
+.contacts-social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 80px;
+}
+
+.contacts-social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contacts-link-text {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Специфические стили для платформ */
+.contacts-telegram {
+  background-color: #0088cc;
+}
+
+.contacts-telegram:hover {
+  background-color: #005f99;
+}
+
+.contacts-whatsapp {
+  background-color: #25d366;
+}
+
+.contacts-whatsapp:hover {
+  background-color: #1da851;
+}
+
+.contacts-vkontakte {
+  background-color: #4c75a3;
+}
+
+.contacts-vkontakte:hover {
+  background-color: #3a5a7a;
+}
+
+.contacts-tor {
+  background-color: #5c3c92;
+}
+
+.contacts-tor:hover {
+  background-color: #4a2f75;
+}
+
+/* Новые стили для дополнительных ссылок */
+.contacts-verhniydom {
+  background-color: #8e44ad; /* Фиолетовый для сайта сдачи домов */
+}
+
+.contacts-verhniydom:hover {
+  background-color: #6c3483;
+}
+
+.contacts-booking {
+  background-color: #e74c3c; /* Красный для сайта бронирования */
+}
+
+.contacts-booking:hover {
+  background-color: #c0392b;
+}
+
+/* Дополнительный блок */
+.contacts-extra-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .contacts-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .contacts-links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contacts-social-link {
+    width: 100%;
+    max-width: 200px;
+  }
+}

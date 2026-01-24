@@ -1,0 +1,72 @@
+/* Общий контейнер отзывов */
+.reviews-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.reviews-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Список отзывов */
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Каждый отзыв */
+.review-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок отзыва (автор и рейтинг) */
+.review-header {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.review-header strong {
+  color: #007bff;
+}
+
+/* Текст отзыва */
+.review-item p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Дата */
+.review-item small {
+  color: #888;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Сообщение, если отзывов нет */
+.reviews-container p {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
