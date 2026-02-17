@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './apartments.css';
 import ApartmentCard from '../../components/apartment/ApartmentCart';
 import { apartments } from '../../components/apartment/ApartmentData';
+import HomeReserveWidget from '../homeReserveWidget/HomeReserveWidget';
 
 const Apartaments = () => {
   const [activeTab, setActiveTab] = useState("99");
@@ -22,7 +23,7 @@ const Apartaments = () => {
 
   return (
     <div className='apartaments-container'>
-      {/* Навигация по комнатам (как было) */}
+      <HomeReserveWidget />
       <nav>
         <ul className='nav-list--apartments'>
           <li className='nav-list-btn' onClick={() => setActiveTab('99')}>

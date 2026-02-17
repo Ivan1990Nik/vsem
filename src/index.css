@@ -1,5 +1,4 @@
 
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgb(248, 246, 246);
-  background-color: #242424;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

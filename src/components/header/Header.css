@@ -92,16 +92,18 @@
 
 /* Мобильное выпадное меню */
 .mobile-menu {
+  margin-top: 150px;
   text-align: center;
   display: none; /* Скрыто по умолчанию */
   position: absolute;
   top: 100%; /* Под header */
   left: 0;
   width: 99%;
+  z-index: 1900;
 background-color: #fffffffd;  /* Черный фон, как header */
+}
+#hr-widget {
 
- 
-  z-index: 1000;
 }
 
 .mobile-nav-list {

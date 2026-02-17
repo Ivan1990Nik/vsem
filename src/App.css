@@ -4,7 +4,6 @@
 
 
 
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -15,7 +14,7 @@ body {
 
 
 
-  background-color: #000; /* Черный фон страницы */
+  background-color: white; /* Черный фон страницы */
   margin: 0;
   padding: 0;
   color: #030303; /* Темно-желтый текст по умолчанию */
