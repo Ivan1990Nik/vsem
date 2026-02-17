@@ -40,7 +40,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <Router basename="/vsem">
+    <Router>
       <AppRoutes />
     </Router>
   );
