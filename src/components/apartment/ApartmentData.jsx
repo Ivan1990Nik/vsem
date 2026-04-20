@@ -76,21 +76,6 @@ import img438_12 from "../../assets/images/centr/05_let/img_12.jpg";
 import img438_13 from "../../assets/images/centr/05_let/img_13.jpg";
 import img438_14 from "../../assets/images/centr/05_let/img_14.jpg";
 
-// 06_Харковская66
-import img66_01 from "../../assets/images/centr/06_har/img_01.jpg";
-import img66_02 from "../../assets/images/centr/06_har/img_02.jpg";
-import img66_03 from "../../assets/images/centr/06_har/img_03.jpg";
-import img66_04 from "../../assets/images/centr/06_har/img_04.jpg";
-import img66_05 from "../../assets/images/centr/06_har/img_05.jpg";
-import img66_06 from "../../assets/images/centr/06_har/img_06.jpg";
-import img66_07 from "../../assets/images/centr/06_har/img_07.jpg";
-import img66_08 from "../../assets/images/centr/06_har/img_08.jpg";
-import img66_09 from "../../assets/images/centr/06_har/img_09.jpg";
-import img66_10 from "../../assets/images/centr/06_har/img_10.jpg";
-import img66_11 from "../../assets/images/centr/06_har/img_11.jpg";
-import img66_12 from "../../assets/images/centr/06_har/img_12.jpg";
-import img66_13 from "../../assets/images/centr/06_har/img_13.jpg";
-
 // 07_Харковская76
 import img76_01 from "../../assets/images/centr/07_har/img_01.jpg";
 import img76_02 from "../../assets/images/centr/07_har/img_02.jpg";
@@ -122,9 +107,7 @@ import img63_15 from "../../assets/images/centr/08_let/img_15.jpg";
 // Мыс
 // 01_Беляева33к2
 import img33_01 from "../../assets/images/mis/01_bel/img_01.jpg";
-import img33_02 from "../../assets/images/mis/01_bel/img_02.jpg";
 import img33_03 from "../../assets/images/mis/01_bel/img_03.jpg";
-import img33_04 from "../../assets/images/mis/01_bel/img_04.jpg";
 import img33_05 from "../../assets/images/mis/01_bel/img_05.jpg";
 import img33_06 from "../../assets/images/mis/01_bel/img_06.jpg";
 import img33_07 from "../../assets/images/mis/01_bel/img_07.jpg";
@@ -317,7 +300,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "50 лет Октября 57А",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -361,7 +344,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "50 лет Октября 57А",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -400,7 +383,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "50 лет Октября 57А",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -443,7 +426,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "50 лет Октября 57А корпус1",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -484,7 +467,7 @@ export const apartments = [
     title: "2к - Квартира",
     address: "50 лет Октября 57А корпус1",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -511,48 +494,7 @@ export const apartments = [
       img438_10,
     ],
   },
-  {
-    id: 6,
 
-    people: 3,
-    rooms: 1, // Для фильтрации
-    area: 42,
-    bed: "2 + 1",
-    floor: 11,
-    technique: [
-      "кондиционер, водонагреватель, холодильник, СВЧ, варочная панель, духовка, вытяжка, чайник, фен, стиральная машина, TB Smart, утюг",
-    ],
-    internet: "wi-fi",
-    comfort: ["постельное бельё, полотенца, средства личной гигиены"],
-    title: "1к - Квартира",
-    address: "Харьковская 66",
-    district: "Центр",
-    price: 2000,
-    pledge: 2000,
-    CheckoutTime: CheckoutTime,
-
-    rent: "да",
-    children: "да",
-    animals: "нет",
-    smoke: "нет",
-    party: "нет",
-    document: "да",
-    image: img66_01,
-    images: [
-      img66_02,
-      img66_03,
-      img66_04,
-      img66_05,
-      img66_06,
-      img66_07,
-      img66_09,
-      img66_13,
-      img66_08,
-      img66_10,
-      img66_11,
-      img66_12,
-    ],
-  },
   {
     id: 7,
     people: 4,
@@ -568,7 +510,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Харьковская 76",
     district: "Центр",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
 
@@ -650,7 +592,7 @@ export const apartments = [
     title: "2к - Квартира",
     address: "Беляева 33 корп.2",
     district: "Мыс",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -687,7 +629,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Чаркова 81",
     district: "Мыс",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -724,7 +666,7 @@ export const apartments = [
     title: "студия - Квартира",
     address: "Чаркова 79",
     district: "Мыс",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -751,7 +693,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Пожарных и спасателей 3 к.1",
     district: "Мыс",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -870,7 +812,7 @@ export const apartments = [
     title: "студия - Квартира",
     address: "Лесопарковая 1 к.1",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -905,7 +847,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Лесопарковая 1 к.2",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -942,7 +884,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Крапивина 8,",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -980,7 +922,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Крапивина 10,",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -1015,7 +957,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Героев Космоса 23",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",
@@ -1051,7 +993,7 @@ export const apartments = [
     title: "1к - Квартира",
     address: "Западносибирская 2 к.1",
     district: "Лесобаза",
-    price: 2000,
+    price: 2500,
     pledge: 2000,
     CheckoutTime: CheckoutTime,
     rent: "да",

@@ -1,41 +1,36 @@
 // AppointmentCard.jsx (или ApartmentCard.jsx)
-import React, { useState } from 'react';
-import '../../pages/apartments/apartments.css'; // Общий CSS для стилей
-import ApartmentModal from './ApartmentModal';
-
+import React, { useState } from "react";
+import "../../pages/apartments/apartments.css"; // Общий CSS для стилей
+import ApartmentModal from "./ApartmentModal";
 
 const ApartmentCard = ({ apartment }) => {
-
-const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-
-return (
+  return (
     <>
       <div className="apartment-card" onClick={openModal}>
-        <img 
-          src={apartment.image} 
-          alt={apartment.title} 
-          className="apartment-image" 
+        <img
+          src={apartment.image}
+          alt={apartment.title}
+          className="apartment-image"
         />
-        <div className="apartment-info" >
+        <div className="apartment-info">
           <h3>{apartment.title}</h3>
-           
+
           <div className="apartment-details">
-            <span>Цена: {apartment.price} ₽</span>
+            <span>Цена: от {apartment.price} ₽</span>
             <span>Площадь: {apartment.area} м²</span>
           </div>
-          <div className='btn-style-container'>
-         {/*  <button className="btn-style" onClick={openModal}>Подробнее</button> */}
-       
-
-          </div>
+          <div className="btn-style-container"></div>
         </div>
       </div>
 
-      {isModalOpen && <ApartmentModal apartment={apartment} onClose={closeModal} />}
+      {isModalOpen && (
+        <ApartmentModal apartment={apartment} onClose={closeModal} />
+      )}
     </>
   );
 };

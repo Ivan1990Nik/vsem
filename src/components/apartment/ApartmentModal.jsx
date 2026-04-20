@@ -145,7 +145,7 @@ const ApartmentModal = ({ apartment, onClose }) => {
           <li className="modal-detail-item-info">
             <p>Забронировать самостоятельно:</p>
             <Link onClick={onClose} className="btn-style-tel" to="/reserve">
-              бронировать
+              забронировать
             </Link>
           </li>
         </ul>

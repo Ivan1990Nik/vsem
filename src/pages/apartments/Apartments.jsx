@@ -4,55 +4,62 @@ import ApartmentCard from '../../components/apartment/ApartmentCart';
 import { apartments } from '../../components/apartment/ApartmentData';
 import HomeReserveWidget from '../homeReserveWidget/HomeReserveWidget';
 
+import { motion, AnimatePresence } from "framer-motion";
+
 const Apartaments = () => {
   const [activeTab, setActiveTab] = useState("99");
   const [activeDistrict, setActiveDistrict] = useState("all");
 
   const filteredApartments = apartments.filter((apartment) => {
-    // Фильтр по комнатам (как было)
-    const matchesRooms = activeTab === '99' || apartment.rooms.toString() === activeTab;
+    const matchesRooms =
+      activeTab === '99' || apartment.rooms.toString() === activeTab;
 
-    // Фильтр по району (новый)
-    const matchesDistrict = activeDistrict === 'all' || apartment.district === activeDistrict;
+    const matchesDistrict =
+      activeDistrict === 'all' || apartment.district === activeDistrict;
 
-    // Возвращаем true только если оба условия совпадают
     return matchesRooms && matchesDistrict;
   });
-
-
 
   return (
     <div className='apartaments-container'>
       <HomeReserveWidget />
+
+      {/* 🔹 Фильтр по комнатам */}
       <nav>
         <ul className='nav-list--apartments'>
           <li className='nav-list-btn' onClick={() => setActiveTab('99')}>
             <div className='btn-style'>Все</div>
           </li>
+
           <li className='nav-list-btn' onClick={() => setActiveTab('1')}>
             <div className='btn-style'>1 - комнатные квартиры</div>
           </li>
+
           <li className='nav-list-btn' onClick={() => setActiveTab('2')}>
             <div className='btn-style'>2 - комнатные квартиры</div>
           </li>
+
           <li className='nav-list-btn' onClick={() => setActiveTab('3')}>
             <div className='btn-style'>3 - комнатные квартиры</div>
           </li>
+
           <li className='nav-list-btn' onClick={() => setActiveTab('0')}>
             <div className='btn-style'>Студии</div>
           </li>
-          <li className='nav-list-btn' onClick={() => {
-            setActiveTab('4');
-            setActiveDistrict('all')
-          }}
-          >
 
+          <li
+            className='nav-list-btn'
+            onClick={() => {
+              setActiveTab('4');
+              setActiveDistrict('all');
+            }}
+          >
             <div className='btn-style'>коттеджи</div>
           </li>
         </ul>
       </nav>
 
-      {/* Новая навигация по районам (теперь селект) */}
+      {/* 🔹 Фильтр по районам */}
       <div className='district-selector'>
         <select
           className='district-select'
@@ -66,13 +73,24 @@ const Apartaments = () => {
         </select>
       </div>
 
-      {/* Рендеринг квартир (как было) */}
-      <div className='apartments-grid'>
-        {filteredApartments.map((apartment) => (
-          <ApartmentCard key={apartment.id} apartment={apartment} />
-        ))}
-      </div>
-    </div >
+      {/* 🔥 АНИМАЦИЯ */}
+      <motion.div layout className='apartments-grid'>
+        <AnimatePresence>
+          {filteredApartments.map((apartment) => (
+            <motion.div
+              key={apartment.id}
+              layout
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ type: "spring", stiffness: 120, damping: 15 }}
+            >
+              <ApartmentCard apartment={apartment} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    </div>
   );
 };
 
